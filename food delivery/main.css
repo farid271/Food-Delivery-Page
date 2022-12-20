@@ -1,0 +1,420 @@
+:root {
+    --colour1:  #FCD461;
+    --colour2: #503E9D;
+    --colour3: #FB6D3A;
+    --colour4: #FFF7ED;
+    --colour5: #9D9892;
+}
+
+
+
+
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+.main {
+    position: absolute;
+    left:0;
+    width: 70%;
+    padding: 2em 0em;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.wrapper {
+    margin-left: 60px;
+    width: 75%;
+}
+
+
+
+.side-bar {
+    height: 100%;
+    width: 26%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #FDFDFB;
+    padding: 2em 0;
+    
+}
+
+/**sidebar icons**/
+
+.side-bar .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 1em;
+    
+}
+
+.side-bar .icons img {
+    width: 10%;
+    height: auto;
+    margin-right: 30px;
+}
+
+.side-bar .icons .num3 {
+    border: 2px solid #FCD461;
+    background-color: #FCD461;
+    border-radius: 0.9em;
+    padding: 0.5em 0.9em;
+    font-weight: bold;
+
+}
+
+/**sidebar heading**/
+
+.side-bar .my-order {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.side-bar .my-order h4 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/**Address bar**/
+
+.side-bar .address {
+    background-color: var(--colour2);
+    width: 70%;
+    border-radius: 2em;
+    padding: 2em;
+    font-size: 0.8em;
+    color: white;
+}
+
+
+.yellow {
+    color: var(--colour1);
+    text-align: right;
+}
+
+.side-bar .address .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.side-bar .address .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side-bar .address .bottom .time {
+    display: flex;
+}
+
+
+.side-bar .address .bottom .clock {
+    background-color: #604C95;
+    width: 100%;
+    height: 20px;
+    border-radius: 0.5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin-right: 10px;
+
+}
+
+/**food**/
+
+.side-bar .food {
+    margin: 50px 0px;
+}
+
+.side-bar .food .option {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.side-bar .food .option img {
+    width: 100%;
+    height: 40px;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.side-bar .food .option .food-text, .side-bar .food .option .food-del {
+    margin-top: 15px;
+}
+
+.side-bar .food .option .food-del {
+    text-align: right;
+    color: var(--colour5);
+}
+
+/**total**/
+
+.side-bar .total .first-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 2px #D3D3D3;
+    padding-bottom: 1em;
+
+}
+
+.side-bar .total .first-line .total-bold {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.side-bar .total .first-line p {
+    font-size: 1.3em;
+
+}
+
+/**checkout**/
+
+.side-bar .checkout {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.side-bar .checkout button {
+    background-color: var(--colour1);
+    border: none;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+
+
+/**header**/
+
+.menu img {
+    width: 12%;
+}
+
+.header .search {
+    background-color: #F8F8F7;
+    width: 1000px;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+
+}
+
+.search input[type=text] {
+    border: none;
+    background-color: #F8F8F7 ;
+    width: 80%;
+    padding: 1em;
+    outline: none;
+}
+
+.header .search button img {
+    width: 100%;
+    height: 20px;
+    
+}
+
+.header .search button {
+    border: none;
+    background-color: #F8F8F7;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+
+.main .header {
+    display: flex;
+    align-items: center;
+}
+
+.main .header .menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu h3 {
+    margin-left: 40px;
+    font-weight: bolder;
+}
+
+
+/**ad**/
+
+.main .ad {
+    background-color: var(--colour4);
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    margin-top: 50px;
+    border-radius: 1em;
+}
+
+.main .ad .ad-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 150px;
+}
+
+.main .ad .ad-text h3 {
+    font-weight: bold;
+    color: var(--colour3);
+    font-size: 1.5em;
+}
+
+.main .ad .ad-text p {
+    color: var(--colour5);
+    font-size: 0.8em;
+}
+
+.main .ad img {
+    width: 30%;
+    height: 150px;
+}
+
+
+/**resturants header**/
+
+.restuarants {
+    margin-top: 50px;
+}
+
+.restuarants .rest-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restuarants .rest-top h3 {
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+
+.restuarants .rest-top .rest-delivery {
+    display: flex;
+    background-color: var(--colour3);
+    color: white;
+    border-radius: 2em;
+    padding: 0.8em;
+    font-size: 0.6em;
+    align-items: center;
+}
+
+
+.restuarants .rest-top .rest-delivery .rest-clock img {
+    width: 100%;
+    height: 15px;
+    margin-right: 10px;
+}
+
+/**Menu**/
+
+.restuarants .rest-menu .rest-icon img {
+    width: 70%;
+    height: 45px;
+    border: solid 1px var(--colour5);
+    border-radius: 300px;
+    margin-top: 5px;
+    margin-left: 9px;
+
+}
+
+.restuarants .rest-menu  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 85%;
+    margin-top: 40px;
+}
+
+.restuarants .rest-menu .rest-icon {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 50px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    width: 70px;
+    box-shadow: 3px 9px 8px 1px rgba(0,0,0,0.1);
+
+    
+
+}
+
+.restuarants .rest-menu .rest-icon p {
+    font-size: 0.7em;
+    margin-top: 10px;
+}
+
+
+/**Options**/
+
+.restuarants .rest-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+
+}
+
+.rest-food{
+margin-left: 20px;
+   
+}
+.rest-food:first-child{
+    margin-left: 0px;
+}
+
+.restuarants .rest-options .rest-food img {
+    width: 100%;
+    height: 150px;
+    border-radius: 1em;
+}
+
+.desc {
+    margin-top: 10px;
+}
+
+.restuarants .rest-options .rest-food .sub-text {
+    display: flex;
+    font-size: 0.7em;
+    margin-top: 10px;
+
+ 
+}
+
+.restuarants .rest-options .rest-food .sub-text .ratings img {
+    width: 30%;
+  
+    height: auto;
+}
+
+.restuarants .rest-options .rest-food .sub-text .ratings {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    margin-right: 10px;
+}
+.ratings img{
+    margin-right: 10px;
+}
+
+.restuarants .rest-options .rest-food .sub-text .rest-desc {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.restuarants .rest-options .rest-food .sub-text .rest-desc div {
+    margin-right: 10px;
+    color: #AAAAAA;
+}
